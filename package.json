@@ -1,39 +1,24 @@
 {
-  "name": "codedobo-web",
-  "version": "1.0.0",
-  "description": "The web interface for codedobo",
-  "main": "lib/index.js",
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist/ && babel . --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/bin/www.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codedobo/web.git"
-  },
-  "author": "CodeDoctorDE",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codedobo/web/issues"
-  },
-  "homepage": "https://github.com/codedobo/web#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "nodemon": "^2.0.2",
-    "rimraf": "^3.0.2",
-    "cookie-parser": "^1.4.4",
-    "debug": "^4.1.1",
-    "http-errors": "^1.7.3",
-    "pug": "^2.0.4",
-    "morgan": "^1.9.1"
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "next": "9.2.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "@types/node": "^13.9.0",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "typescript": "^3.8.3"
   }
 }
